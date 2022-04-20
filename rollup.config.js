@@ -12,7 +12,7 @@ export default [
       copy({
         targets: [
           { src: 'src/styles/idsk3_theme.css', dest: 'dist/styles' },
-          { src: 'src/assets', dest: 'dist/assets' },
+          { src: 'src/assets', dest: 'dist' },
         ]
       })
     ],
