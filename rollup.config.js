@@ -11,7 +11,7 @@ export default [
     plugins: [
       copy({
         targets: [
-          { src: 'src/styles/idsk3_theme.css', dest: 'dist/styles' },
+          { src: 'src/styles', dest: 'dist' },
           { src: 'src/assets', dest: 'dist' },
         ]
       })
