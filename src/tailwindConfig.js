@@ -102,7 +102,7 @@ module.exports = {
       tb2: '730px',
       dm1: '1120px',
       dm2: '1440px',
-      dl: '1820px'
+      dl: '1530px'
     },
 
     extend: {
