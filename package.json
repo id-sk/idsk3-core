@@ -1,6 +1,6 @@
 {
   "name": "@eslovensko/idsk-core",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "description": "Core styles and assets for IDSK 3.0",
   "scripts": {
     "clean-dist": "rm -rf ./dist",
@@ -10,16 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/eslovensko/esvk_web_idsk_core.git"
+    "url": "git+ssh://git@gitlab.slovenskoit.sk:components/shared-web-libs/esvk_web_lib_idsk_core.git"
   },
   "author": "Slovensko IT",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://gitlab.com/eslovensko/esvk_web_idsk_core/issues"
+    "url": "https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_core/issues"
   },
-  "homepage": "https://gitlab.com/eslovensko/esvk_web_idsk_core#readme",
+  "homepage": "https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_core#readme",
   "devDependencies": {
-    "@eslovensko/idsk-react": "^3.0.10",
+    "@eslovensko/idsk-react": "3.0.24",
     "autoprefixer": "^10.4.4",
     "rollup": "^2.70.1",
     "rollup-plugin-copy": "^3.4.0",

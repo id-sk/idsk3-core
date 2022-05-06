@@ -29,6 +29,6 @@ deploy:
     - develop
     - /^devops\/.*$/
   script:
-    - echo "@eslovensko:registry=https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/">.npmrc
-    - echo "//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">>.npmrc
+    - echo "@eslovensko:registry=https://gitlab.slovenskoit.sk/api/v4/projects/${CI_PROJECT_ID}/packages/npm/">.npmrc
+    - echo "//gitlab.slovenskoit.sk/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">>.npmrc
     - npm run deploy

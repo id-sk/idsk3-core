@@ -6,12 +6,12 @@ This library contains core styles and assets for IDSK 3.0 template framework. Th
 
 The npm packages for this library are stored in Gitlab:
 
-https://gitlab.com/eslovensko/esvk_web_idsk_core/-/packages
+https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_core/-/packages
 
 To be able to install the `@eslovensko/idsk-core` package you need these credentials to be stored in `.npmrc` file:
 ```
-@eslovensko:registry=https://gitlab.com/api/v4/packages/npm/
-//gitlab.com/api/v4/packages/npm/:_authToken=f5EFesJ4XQyjLM-e_Diq
+@eslovensko:registry=https://gitlab.slovenskoit.sk/api/v4/packages/npm/
+//gitlab.slovenskoit.sk/api/v4/packages/npm/:_authToken=5MU3Q9noGTTLvf6JcznZ
 ```
 
 Then you can add the library to your project dependencies
@@ -33,7 +33,7 @@ npm install
 npm run build-styles
 ```
 This builds the `idsk3_theme.css` stylesheet using Tailwind framework (https://tailwindcss.com)
-Currently, this library depends on the `idsk-react` library (https://gitlab.com/eslovensko/esvk_web_idsk_react_library), because this is where the components are being created and styled. Only the css classes used in the `idsk-react` project are included in the final `idsk3_theme.css` stylesheet. 
+Currently, this library depends on the `idsk-react` library (https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_react), because this is where the components are being created and styled. Only the css classes used in the `idsk-react` project are included in the final `idsk3_theme.css` stylesheet. 
 
 ### Build the library
 
