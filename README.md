@@ -10,13 +10,18 @@ https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_core/
 
 To be able to install the `@eslovensko/idsk-core` package you need these credentials to be stored in `.npmrc` file:
 ```
-@eslovensko:registry=https://gitlab.slovenskoit.sk/api/v4/packages/npm/
-//gitlab.slovenskoit.sk/api/v4/packages/npm/:_authToken=5MU3Q9noGTTLvf6JcznZ
+@eslovensko:registry=https://gitlab.slovenskoit.sk/api/v4/projects/152/packages/npm/
+//gitlab.slovenskoit.sk/api/v4/projects/152/packages/npm/:_authToken=glpat-cMW7oe44yv3sfLb8okfi
 ```
 
 Then you can add the library to your project dependencies
 ```
 npm install @eslovensko/idsk-core
+```
+
+And import the idsk3 styles in your project
+```
+@import '@eslovensko/idsk-core/dist/styles/idsk3_theme.css';
 ```
 
 ## Library development

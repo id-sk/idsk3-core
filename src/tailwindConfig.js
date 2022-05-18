@@ -116,5 +116,16 @@ module.exports = {
       }
     }
   },
+  safelist: [
+    'caption',
+    'link-caption',
+    'link-l',
+    'link-m',
+    'link-s',
+    'subtitle',
+    'text-body',
+    'text-body-1',
+    'text-button',
+  ],
   plugins: []
 };
