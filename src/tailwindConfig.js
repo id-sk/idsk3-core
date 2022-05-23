@@ -122,10 +122,13 @@ module.exports = {
     'link-l',
     'link-m',
     'link-s',
+    'rotate-180',
+    'sticky',
     'subtitle',
     'text-body',
     'text-body-1',
     'text-button',
+    'w-full'
   ],
   plugins: []
 };
