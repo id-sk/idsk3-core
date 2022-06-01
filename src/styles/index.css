@@ -20,26 +20,42 @@
   h4 {
     @apply text-xl font-bold leading-[1.3rem] tracking-[.15px];
   }
-  .subtitle, .link-l {
+  .subtitle,
+  .link-l {
     @apply text-2xl leading-normal tracking-[.15px];
   }
-  .caption, .link-caption {
+  .caption,
+  .link-caption {
     @apply text-xs tracking-[.4px];
   }
-  .text-body, .link-m {
+  .text-body,
+  .link-m {
     @apply text-[1.1875rem] leading-[1.75rem] tracking-[.5px];
   }
-  .text-body-1, .link-s {
+  .text-body-1,
+  .link-s {
     @apply text-base leading-[1.75rem] tracking-[.5px];
   }
-  .link-l, .link-m, .link-s, .link-caption {
+  .link-l,
+  .link-m,
+  .link-s,
+  .link-caption {
     @apply text-primary underline;
   }
   .text-button {
     @apply text-base font-bold;
   }
-  .link-l, .link-m, .link-s, .text-button {
+  .link-l,
+  .link-m,
+  .link-s,
+  .text-button {
     @apply tracking-[.5px];
+  }
+}
+
+@layer utilities {
+  .page-content {
+    @apply tb1:px-8 dm2:px-40 max-w-[114rem];
   }
 }
 
@@ -127,10 +143,10 @@
   }
 
   .header-container {
-    @apply h-16 tb1:h-[6.25rem] relative inset-x-0 mx-auto flex items-center px-5 tb1:px-8 dm2:px-40 max-w-[114rem] bg-white shadow-divider;
+    @apply h-16 tb1:h-[6.25rem] relative inset-x-0 mx-auto flex items-center px-5 page-content;
   }
   .header-container__wrapper {
-    @apply w-full top-0 z-40 inset-x-0;
+    @apply w-full top-0 z-40 inset-x-0 shadow-divider bg-white;
   }
 
   .icon-link {
@@ -147,13 +163,13 @@
     @apply absolute inset-0 left-auto bg-primary rounded-r-lg text-white flex items-center;
   }
   .searchbar__button--large {
-    @apply  text-2xl px-4  gap-2;
+    @apply text-2xl px-4  gap-2;
   }
   .searchbar__button--medium {
-    @apply  text-xl px-3.5  gap-1.5;
+    @apply text-xl px-3.5  gap-1.5;
   }
   .searchbar__button--small {
-    @apply  text-base px-3  gap-1;
+    @apply text-base px-3  gap-1;
   }
   .searchbar__icon--large {
     @apply text-[2rem];
@@ -165,13 +181,15 @@
     @apply text-[1rem];
   }
 
-  .input, .searchbar {
+  .input,
+  .searchbar {
     @apply bg-white px-4 text-black placeholder:text-neutral-600 border outline-1 outline-none outline-offset-0 rounded-lg hover:shadow-border hover:shadow-neutral-600 focus:shadow-border focus:shadow-neutral-600 disabled:text-neutral-600 disabled:border-neutral-400 disabled:shadow-none disabled:outline-transparent outline-black border-black focus:outline-black focus:border-black placeholder-shown:border-neutral-800 placeholder-shown:outline-transparent;
   }
   .input--error {
     @apply border-alert-warning outline-alert-warning focus:border-alert-warning focus:outline-alert-warning disabled:border-neutral-400 disabled:outline-transparent placeholder-shown:border-alert-warning placeholder-shown:outline-alert-warning;
   }
-  .input--large, .searchbar--large {
+  .input--large,
+  .searchbar--large {
     @apply text-body h-12;
   }
   .input--large.input--icon-left {
@@ -180,7 +198,8 @@
   .input--large.input--icon-right {
     @apply pr-11;
   }
-  .input--medium, .searchbar--medium {
+  .input--medium,
+  .searchbar--medium {
     @apply text-body-1 h-10;
   }
   .input--medium.input--icon-left {
@@ -189,7 +208,8 @@
   .input--medium.input--icon-right {
     @apply pr-10;
   }
-  .input--small, .searchbar--small {
+  .input--small,
+  .searchbar--small {
     @apply caption h-8;
   }
   .input--small.input--icon-left {
@@ -417,10 +437,10 @@
     @apply pt-[1.875rem] pb-16 tb1:pt-[3.25rem] bg-neutral-100 flex-auto flex flex-col;
   }
   .private-page__title {
-    @apply inset-x-0 mx-auto px-5 pb-6 tb1:pb-7 tb1:px-8 dm2:px-40 max-w-[114rem] w-full;
+    @apply inset-x-0 mx-auto pb-6 tb1:pb-7 px-5 page-content w-full;
   }
   .private-page__body {
-    @apply relative inset-x-0 mx-auto tb1:px-8 dm2:px-40 max-w-[114rem] min-h-full flex-auto w-full;
+    @apply relative inset-x-0 mx-auto px-0 page-content  min-h-full flex-auto w-full;
   }
 
   .secondary-button {
@@ -461,10 +481,10 @@
     @apply bg-blue-600;
   }
   .secondary-navigation__header {
-    @apply text-white h-[1.875rem] tb1:h-10 px-5 tb1:px-8 dm2:px-40 max-w-[114rem] relative inset-x-0 mx-auto flex justify-between items-center z-10;
+    @apply text-white h-[1.875rem] tb1:h-10 px-5 page-content relative inset-x-0 mx-auto flex justify-between items-center z-10;
   }
   .secondary-navigation__body {
-    @apply py-2.5 text-white text-body-1 px-5 tb1:px-8 dm2:px-40 max-w-[114rem] relative inset-x-0 mx-auto;
+    @apply py-2.5 text-white text-body-1 px-5 page-content relative inset-x-0 mx-auto;
   }
   .secondary-navigation__title {
     @apply caption tb1:text-body-1;
@@ -478,5 +498,4 @@
   .secondary-navigation__dropdown {
     @apply caption tb1:text-body-1;
   }
-
 }
