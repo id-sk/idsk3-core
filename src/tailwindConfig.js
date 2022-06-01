@@ -118,6 +118,7 @@ module.exports = {
   },
   safelist: [
     'caption',
+    'hidden',
     'link-caption',
     'link-l',
     'link-m',
