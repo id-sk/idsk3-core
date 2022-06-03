@@ -1,6 +1,6 @@
 {
   "name": "@eslovensko/idsk-core",
-  "version": "3.0.21",
+  "version": "3.0.22",
   "description": "Core styles and assets for IDSK 3.0",
   "scripts": {
     "clean-dist": "rm -rf ./dist",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_core#readme",
   "devDependencies": {
-    "@eslovensko/idsk-react": "3.0.45",
+    "@eslovensko/idsk-react": "3.0.47",
     "autoprefixer": "^10.4.4",
     "rollup": "^2.70.1",
     "rollup-plugin-copy": "^3.4.0",

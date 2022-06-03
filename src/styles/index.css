@@ -393,10 +393,13 @@
     @apply bg-primary h-[0.625rem] w-[0.625rem] rounded-full inset-y-0 my-auto absolute -left-[1.375rem];
   }
   .notification-card__date {
-    @apply caption text-neutral-800;
+    @apply caption text-black/70;
   }
   .notification-card__footer {
     @apply pt-2.5 flex gap-4;
+  }
+  .notification-card__link {
+    @apply link-s font-bold;
   }
 
   .primary-button {
