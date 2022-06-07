@@ -20,42 +20,33 @@
   h4 {
     @apply text-xl font-bold leading-[1.3rem] tracking-[.15px];
   }
-  .subtitle,
-  .link-l {
+  .subtitle, .link-l {
     @apply text-2xl leading-normal tracking-[.15px];
   }
-  .caption,
-  .link-caption {
+  .caption, .link-caption {
     @apply text-xs tracking-[.4px];
   }
-  .text-body,
-  .link-m {
+  .text-body, .link-m {
     @apply text-[1.1875rem] leading-[1.75rem] tracking-[.5px];
   }
-  .text-body-1,
-  .link-s {
+  .text-body-1, .link-s {
     @apply text-base leading-[1.75rem] tracking-[.5px];
   }
-  .link-l,
-  .link-m,
-  .link-s,
-  .link-caption {
+  .link-l, .link-m, .link-s, .link-caption {
     @apply text-primary underline;
   }
   .text-button {
     @apply text-base font-bold;
   }
-  .link-l,
-  .link-m,
-  .link-s,
-  .text-button {
+  .link-l, .link-m, .link-s, .text-button {
     @apply tracking-[.5px];
   }
+
 }
 
 @layer utilities {
   .page-content {
-    @apply tb1:px-8 dm2:px-40 max-w-[114rem];
+    @apply tb1:px-8 dm2:px-40 max-w-[114rem]
   }
 }
 
@@ -73,7 +64,7 @@
     @apply w-full px-5 pb-5 pt-[1.875rem] text-left;
   }
   .accordeon__icon {
-    @apply text-[1.875rem];
+    @apply text-[1.875rem] w-[1.875rem] h-[1.875rem];
   }
   .accordeon__content {
     @apply hidden px-5 border-t border-neutral-300 pt-5 pb-10;
@@ -87,7 +78,7 @@
   }
 
   .button__icon {
-    @apply text-[1.5rem] shrink-0;
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem] shrink-0;
   }
   .button__icon--left {
     @apply mr-3;
@@ -123,7 +114,7 @@
     @apply my-5 whitespace-nowrap first:mb-0 only:mb-5;
   }
   .dropdown__icon {
-    @apply text-[1.5rem];
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem];
   }
 
   .event-card {
@@ -163,33 +154,31 @@
     @apply absolute inset-0 left-auto bg-primary rounded-r-lg text-white flex items-center;
   }
   .searchbar__button--large {
-    @apply text-2xl px-4  gap-2;
+    @apply  text-2xl px-4  gap-2;
   }
   .searchbar__button--medium {
-    @apply text-xl px-3.5  gap-1.5;
+    @apply  text-xl px-3.5  gap-1.5;
   }
   .searchbar__button--small {
-    @apply text-base px-3  gap-1;
+    @apply  text-base px-3  gap-1;
   }
   .searchbar__icon--large {
-    @apply text-[2rem];
+    @apply text-[2rem] w-[2rem] h-[2rem];
   }
   .searchbar__icon--medium {
-    @apply text-[1.5rem];
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem];
   }
   .searchbar__icon--small {
-    @apply text-[1rem];
+    @apply text-[1rem] w-[1rem] h-[1rem];
   }
 
-  .input,
-  .searchbar {
+  .input, .searchbar {
     @apply bg-white px-4 text-black placeholder:text-neutral-600 border outline-1 outline-none outline-offset-0 rounded-lg hover:shadow-border hover:shadow-neutral-600 focus:shadow-border focus:shadow-neutral-600 disabled:text-neutral-600 disabled:border-neutral-400 disabled:shadow-none disabled:outline-transparent outline-black border-black focus:outline-black focus:border-black placeholder-shown:border-neutral-800 placeholder-shown:outline-transparent;
   }
   .input--error {
     @apply border-alert-warning outline-alert-warning focus:border-alert-warning focus:outline-alert-warning disabled:border-neutral-400 disabled:outline-transparent placeholder-shown:border-alert-warning placeholder-shown:outline-alert-warning;
   }
-  .input--large,
-  .searchbar--large {
+  .input--large, .searchbar--large {
     @apply text-body h-12;
   }
   .input--large.input--icon-left {
@@ -198,8 +187,7 @@
   .input--large.input--icon-right {
     @apply pr-11;
   }
-  .input--medium,
-  .searchbar--medium {
+  .input--medium, .searchbar--medium {
     @apply text-body-1 h-10;
   }
   .input--medium.input--icon-left {
@@ -208,8 +196,7 @@
   .input--medium.input--icon-right {
     @apply pr-10;
   }
-  .input--small,
-  .searchbar--small {
+  .input--small, .searchbar--small {
     @apply caption h-8;
   }
   .input--small.input--icon-left {
@@ -246,13 +233,13 @@
     @apply absolute inset-y-0 m-auto;
   }
   .input__icon--large {
-    @apply text-[1.25rem];
+    @apply text-[1.25rem] w-[1.25rem] h-[1.25rem];
   }
   .input__icon--medium {
-    @apply text-[1rem];
+    @apply text-[1rem] w-[1rem] h-[1rem];
   }
   .input__icon--small {
-    @apply text-[0.825rem];
+    @apply text-[0.825rem] w-[0.825rem] h-[0.825rem];
   }
   .input__icon--left {
     @apply left-4;
@@ -311,7 +298,7 @@
     @apply flex flex-col justify-center items-center;
   }
   .loader__icon {
-    @apply text-[3.5rem];
+    @apply text-[3.5rem] w-[3.5rem] h-[3.5rem];
   }
   .loader__label {
     @apply text-body mt-2;
@@ -321,7 +308,7 @@
     @apply px-2.5 border rounded-md h-9 tb1:h-10 flex items-center gap-3 text-body text-blue-600 font-bold;
   }
   .menu-button__icon {
-    @apply text-[1.625rem];
+    @apply text-[1.625rem] w-[1.625rem] h-[1.625rem];
   }
 
   .modal-sidebar {
@@ -346,7 +333,7 @@
     @apply border h-8 w-8 rounded-md flex items-center justify-center;
   }
   .modal-sidebar__close-icon {
-    @apply text-[1.25rem];
+    @apply text-[1.25rem] w-[1.25rem] h-[1.25rem];
   }
   .modal-sidebar__body {
     @apply flex-initial overflow-auto;
@@ -355,14 +342,14 @@
     @apply bg-primary text-body-1 font-bold text-white p-3 flex items-center justify-center gap-1;
   }
   .modal-sidebar__forward-icon {
-    @apply text-[1.25rem];
+    @apply text-[1.25rem] w-[1.25rem] h-[1.25rem];
   }
 
   .navigation {
     @apply px-10 h-full flex items-center;
   }
   .navigation__arrow-icon {
-    @apply text-[1.5rem];
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem];
   }
   .navigation__dropdown {
     @apply h-full hover:bg-blue-100 flex items-center px-3 text-body-1 text-black;
@@ -496,9 +483,38 @@
     @apply hover:underline font-bold tracking-[.5px] inline-flex items-center;
   }
   .secondary-navigation__title-button-icon {
-    @apply text-[1.5rem];
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem];
   }
   .secondary-navigation__dropdown {
     @apply caption tb1:text-body-1;
   }
+
+  .vertical-event-card {
+    @apply flex flex-col my-2;
+  }
+  .vertical-event-card__color-strip {
+    @apply absolute inset-x-0 top-0 h-2 w-full;
+  }
+  .vertical-event-card__header {
+    @apply px-5 pt-4 pb-5 flex flex-row justify-between items-center border-b border-b-neutral-300;
+  }
+  .vertical-event-card__body {
+    @apply px-5 py-2.5;
+  }
+  .vertical-event-card__alert-icon {
+    @apply text-[1.5rem] w-[1.5rem] h-[1.5rem];
+  }
+  .vertical-event-card__title {
+    @apply font-bold mb-2.5;
+  }
+  .vertical-event-card__date {
+    @apply flex flex-row items-center;
+  }
+  .vertical-event-card__day {
+    @apply mr-1.5 subtitle font-bold;
+  }
+  .vertical-event-card__month {
+    @apply text-body;
+  }
+
 }
