@@ -339,7 +339,7 @@
     @apply flex-initial overflow-auto;
   }
   .modal-sidebar__footer-button {
-    @apply bg-primary text-body-1 font-bold text-white p-3 flex items-center justify-center gap-1;
+    @apply bg-primary text-body-1 font-bold text-white p-3 flex items-center justify-center gap-1 cursor-pointer;
   }
   .modal-sidebar__forward-icon {
     @apply text-[1.25rem] w-[1.25rem] h-[1.25rem];
@@ -359,6 +359,9 @@
   }
   .navigation__link {
     @apply h-full text-body-1 text-black pt-1 border-b-4 flex items-center gap-1.5 px-3 hover:bg-blue-100 border-transparent;
+  }
+  .navigation__link > a {
+    @apply py-5;
   }
   .navigation__link--clicked {
     @apply border-blue-500 font-bold text-blue-500;
@@ -487,6 +490,40 @@
   }
   .secondary-navigation__dropdown {
     @apply caption tb1:text-body-1;
+  }
+
+  .signpost {
+    @apply flex justify-between p-5 cursor-pointer bg-white;
+  }
+  .signpost--in-group {
+    @apply border-b border-neutral-100 last:border-none;
+  }
+  .signpost--rounded-border {
+    @apply border border-neutral-100 rounded-lg;
+  }
+  .signpost__container {
+    @apply container flex w-full;
+  }
+  .signpost__social-icon {
+    @apply text-blue-500 text-[1.875rem] w-[1.875rem] h-[1.875rem] mr-5 pt-1;
+  }
+  .signpost__icon {
+    @apply text-blue-400 text-[1.875rem] w-[1.875rem] h-[1.875rem];
+  }
+  .signpost__title {
+    @apply flex items-center link-m font-bold;
+  }
+  .signpost__title-icon {
+    @apply text-[1.875rem] w-[1.875rem] h-[1.875rem] mr-2;
+  }
+  .signpost__description {
+    @apply text-body-1;
+  }
+  .signpost__arrow-icon {
+    @apply font-bold text-[1.25rem] w-[1.25rem] h-[1.25rem] ml-4;
+  }
+  .signpost-group {
+    @apply border border-neutral-100 rounded-lg overflow-hidden;
   }
 
   .vertical-event-card {
