@@ -129,7 +129,9 @@ module.exports = {
     'text-body',
     'text-body-1',
     'text-button',
-    'w-full'
+    'w-full',
+    'page-content',
+    'page-content-public'
   ],
   plugins: []
 };
