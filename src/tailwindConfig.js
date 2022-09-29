@@ -89,6 +89,8 @@ module.exports = {
       'alert-attention-medium': '#EBCFAA',
       'alert-attention-light': '#FAF4EC',
 
+      'focus-state': '#E06E00',
+
       get primary() {
         return this.blue[400];
       },
