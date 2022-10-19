@@ -94,6 +94,9 @@ module.exports = {
       get primary() {
         return this.blue[400];
       },
+      get 'primary-medium'() {
+        return this.blue[500];
+      },
       get 'primary-dark'() {
         return this.blue[600];
       }
