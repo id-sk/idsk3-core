@@ -9,47 +9,40 @@
     font-family: 'Source Sans Pro', sans-serif;
   }
   h1 {
-    @apply text-5xl font-black leading-[3.4375rem];
+    @apply text-4xl tb2:text-5xl font-black leading-11 tb2:leading-12;
   }
   h2 {
-    @apply text-2xl tb1:text-4xl font-black tb1:leading-tight;
+    @apply text-2xl tb2:text-4xl font-black leading-8.5 tb2:leading-11;
   }
   h3 {
-    @apply text-2xl font-bold leading-normal;
+    @apply text-xl tb2:text-2xl font-bold leading-6.5 tb2:leading-8.5;
   }
   h4 {
-    @apply text-xl font-bold leading-[1.625rem] tracking-[.15px];
+    @apply text-main tb2:text-xl font-bold leading-6 tb2:leading-6.5 tracking-[.15px];
   }
-  .subtitle,
-  .link-l {
-    @apply text-2xl leading-normal tracking-[.15px];
+  .subtitle, .link-l {
+    @apply text-main tb2:text-2xl tb2:leading-normal tb2:tracking-[.15px];
   }
-  .caption,
-  .link-caption {
-    @apply text-xs tracking-[.4px];
+  .caption, .link-caption {
+      @apply text-xs tracking-[.4px];
   }
-  .text-body,
-  .link-m {
-    @apply text-[1.1875rem] leading-[1.75rem] tracking-[.5px];
+  .text-body, .link-m {
+      @apply text-base tb2:text-main;
   }
-  .text-body-1,
+  .text-body-1 {
+      @apply text-sm tb2:text-base tracking-[.1px] tb2:tracking-[.5px];
+  }
   .link-s {
-    @apply text-base leading-[1.75rem] tracking-[.5px];
+      @apply text-sm tb2:text-base tb2:leading-7;
   }
-  .link-l,
-  .link-m,
-  .link-s,
-  .link-caption {
-    @apply text-primary underline;
+  .link-l, .link-m, .link-s, .link-caption {
+      @apply py-[3px] px-[2px] text-primary underline hover:text-primary-dark hover:decoration-[3px] visited:text-blue-500;
   }
   .text-button {
-    @apply text-base font-bold;
+      @apply text-base font-bold tracking-[.5px];
   }
-  .link-l,
-  .link-m,
-  .link-s,
-  .text-button {
-    @apply tracking-[.5px];
+  .link-l, .link-m, .link-s, .text-button {
+      @apply tracking-[.5px];
   }
 }
 

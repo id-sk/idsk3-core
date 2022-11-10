@@ -118,6 +118,15 @@ module.exports = {
         dialog: '0px -8px 44px -10px rgba(0, 0, 0, 0.25)',
         divider: '0px 10px 20px -10px rgba(26, 26, 26, 0.2)',
         border: '0px 0px 0px 4px rgba(26, 26, 26, 0.2)'
+      },
+      lineHeight: {
+        12: '3.4375rem',
+        11: '2.8125rem',
+        8.5: '2.1875rem',
+        6.5: '1.625rem'
+      },
+      fontSize: {
+        main: ['1.1875rem', { lineHeight: '1.75rem', letterSpacing: '0,0313rem' }]
       }
     }
   },
