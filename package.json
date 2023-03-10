@@ -5,7 +5,7 @@
   "scripts": {
     "build-styles": "tailwindcss -i ./src/styles/index.css -o ./src/styles/idsk3.css -m",
     "clean-dist": "rm -rf ./dist",
-    "rollup": "npm run clean-dist && npm run build-styles && rollup -c"
+    "rollup": "npm run clean-dist && npm run build-styles && rollup -c --bundleConfigAsCjs"
   },
   "repository": {
     "type": "git",
