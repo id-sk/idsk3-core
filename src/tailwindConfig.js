@@ -134,21 +134,21 @@ module.exports = {
     }
   },
   safelist: [
-    'caption',
     'hidden',
-    'link-caption',
-    'link-l',
-    'link-m',
-    'link-s',
     'rotate-180',
     'sticky',
-    'subtitle',
-    'text-body',
-    'text-body-1',
-    'text-button',
     'w-full',
-    'page-content',
-    'page-content-public'
+    'idsk-caption',
+    'idsk-link-caption',
+    'idsk-link-l',
+    'idsk-link-m',
+    'idsk-link-s',
+    'idsk-subtitle',
+    'idsk-text-body',
+    'idsk-text-body-1',
+    'idsk-text-button',
+    'idsk-page-content',
+    'idsk-page-content-public'
   ],
   plugins: []
 };
