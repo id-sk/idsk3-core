@@ -1,6 +1,6 @@
-# IDSK 3.0 Core Library
+# IDSK 3 Core Library
 
-This library contains core styles and assets for IDSK 3.0 template framework. The purpose of this library is to have unified styles and assets for IDSK component libraries built with various technologies (React, HTML, ...)
+This library contains core styles and assets for IDSK 3 template framework. The purpose of this library is to have unified styles and assets for IDSK component libraries built with various technologies (React, HTML, ...)
 
 ## Library development
 
