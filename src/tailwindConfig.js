@@ -134,8 +134,11 @@ module.exports = {
     }
   },
   safelist: [
+    'bg-transparent',
+    'flex-auto',
     'hidden',
     'rotate-180',
+    'sr-only',
     'sticky',
     'w-full',
     'idsk-caption',

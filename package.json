@@ -1,7 +1,7 @@
 {
   "name": "@id-sk/idsk3-core",
-  "version": "3.0.1",
-  "description": "Core styles and assets for IDSK 3.0",
+  "version": "3.0.2",
+  "description": "Core styles and assets for IDSK 3",
   "scripts": {
     "build-styles": "tailwindcss -i ./src/styles/index.css -o ./src/styles/idsk3.css -m",
     "clean-dist": "rm -rf ./dist",
