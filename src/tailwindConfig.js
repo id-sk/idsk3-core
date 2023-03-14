@@ -136,10 +136,13 @@ module.exports = {
   safelist: [
     'bg-transparent',
     'flex-auto',
+    'font-bold',
+    'h-6',
     'hidden',
     'rotate-180',
     'sr-only',
     'sticky',
+    'w-6',
     'w-full',
     'idsk-caption',
     'idsk-link-caption',
