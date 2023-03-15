@@ -1,9 +1,6 @@
 module.exports = {
   content: ['./src/styles/index.css'],
   theme: {
-    fontFamily: {
-      serif: ['Source Sans Pro', 'sans-serif']
-    },
     colors: {
       transparent: 'transparent',
       white: '#FFFFFF',
