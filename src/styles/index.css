@@ -668,22 +668,26 @@
     @apply pl-4 pr-2 tb1:px-8 py-3 flex items-center relative overflow-hidden border rounded-[0.31rem];
   }
   .idsk-information-banner__wrapper {
-    @apply flex items-center justify-between w-full;
+    @apply flex items-center justify-between w-full flex-wrap gap-4;
   }
-  .idsk-information-banner__base-button {
+  .idsk-information-banner__close-button {
     @apply hover:ring-primary hover:ring-1 hover:ring-offset-0 rounded;
   }
-  .idsk-information-banner__base-button-icon {
+  .idsk-information-banner__close-button-icon {
     @apply w-6 h-6;
   }
+  .idsk-information-banner__wrapper button:not(.idsk-information-banner__close-button), .idsk-information-announcement button:not(.idsk-information-banner__close-button) {
+    @apply w-full tb1:w-auto;
+  }
+
   .idsk-information-announcement {
     @apply pr-2 py-5 items-center relative overflow-hidden rounded;
   }
   .idsk-information-announcement__wrapper {
-    @apply flex items-center idsk-page-content;
+    @apply flex items-center idsk-page-content justify-between flex-wrap gap-4;
   }
   .idsk-information-banner__icon {
-    @apply text-center mr-4 text-2xl flex-none;
+    @apply text-center text-2xl flex-none;
   }
   .idsk-information-banner__icon--primary {
     @apply text-primary;
@@ -699,6 +703,9 @@
   }
   .idsk-information-banner__title-wrapper {
     @apply flex-grow-[2];
+  }
+  .idsk-information-banner__wrapper--with-close-button .idsk-information-banner__title-wrapper {
+    @apply order-2 tb2:order-none w-full tb2:w-auto;
   }
   .idsk-information-banner__title {
     @apply font-bold idsk-text-body-1;
@@ -727,22 +734,19 @@
   .idsk-information-banner--warning {
     @apply text-alert-warning-dark bg-alert-warning-light border-alert-warning;
   }
-  .idsk-information-banner__close-button {
-    @apply ml-4 flex justify-center;
-  }
-  .idsk-information-banner__base-button--positive {
+  .idsk-information-banner__close-button--positive {
     @apply text-alert-positive;
   }
-  .idsk-information-banner__base-button--primary {
+  .idsk-information-banner__close-button--primary {
     @apply text-blue-400;
   }
-  .idsk-information-banner__base-button--attention {
+  .idsk-information-banner__close-button--attention {
     @apply text-alert-attention;
   }
-
-  .idsk-information-banner__base-button--warning {
+  .idsk-information-banner__close-button--warning {
     @apply text-alert-warning;
   }
+
   .idsk-feedback {
     @apply bg-blue-600 text-white items-center py-2.5 idsk-text-body-1 font-bold;
   }
