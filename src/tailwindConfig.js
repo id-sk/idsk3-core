@@ -1,9 +1,6 @@
 module.exports = {
-  content: ['./node_modules/@eslovensko/idsk-react/dist/components/**/*.js'],
+  content: ['./src/styles/index.css'],
   theme: {
-    fontFamily: {
-      serif: ['Source Sans Pro', 'sans-serif']
-    },
     colors: {
       transparent: 'transparent',
       white: '#FFFFFF',
@@ -134,21 +131,27 @@ module.exports = {
     }
   },
   safelist: [
-    'caption',
+    'bg-transparent',
+    'flex-auto',
+    'font-bold',
+    'h-6',
     'hidden',
-    'link-caption',
-    'link-l',
-    'link-m',
-    'link-s',
     'rotate-180',
+    'sr-only',
     'sticky',
-    'subtitle',
-    'text-body',
-    'text-body-1',
-    'text-button',
+    'w-6',
     'w-full',
-    'page-content',
-    'page-content-public'
+    'idsk-caption',
+    'idsk-link-caption',
+    'idsk-link-l',
+    'idsk-link-m',
+    'idsk-link-s',
+    'idsk-subtitle',
+    'idsk-text-body',
+    'idsk-text-body-1',
+    'idsk-text-button',
+    'idsk-page-content',
+    'idsk-page-content-public'
   ],
   plugins: []
 };

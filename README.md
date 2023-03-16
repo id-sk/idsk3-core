@@ -38,7 +38,6 @@ npm install
 npm run build-styles
 ```
 This builds the `idsk3_theme.css` stylesheet using Tailwind framework (https://tailwindcss.com)
-Currently, this library depends on the `idsk-react` library (https://gitlab.slovenskoit.sk/components/shared-web-libs/esvk_web_lib_idsk_react), because this is where the components are being created and styled. Only the css classes used in the `idsk-react` project are included in the final `idsk3_theme.css` stylesheet. 
 
 ### Build the library
 
