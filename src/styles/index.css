@@ -328,7 +328,12 @@
   .idsk-checkbox-container {
     @apply flex items-start gap-[0.625rem];
   }
-
+  .idsk-checkbox__label {
+    @apply hover:bg-neutral-600 rounded;
+  }
+  .idsk-checkbox__label--disabled {
+    @apply hover:bg-transparent rounded;
+  }
 
   .idsk-toggle__wrapper {
     @apply flex items-center gap-2.5;
