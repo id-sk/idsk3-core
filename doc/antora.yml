@@ -1,0 +1,12 @@
+name: web-lib-idsk-core
+version:
+  feature/(*): $1
+  devops/(*): $1
+  doc/(*): $1
+  (*): $1
+start_page: kompilacny_manual.adoc
+asciidoc:
+  attributes:
+    app-type: WEB
+nav:
+- modules/ROOT/nav.adoc

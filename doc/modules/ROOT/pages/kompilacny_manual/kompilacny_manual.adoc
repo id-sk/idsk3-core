@@ -1,0 +1,21 @@
+= Kompilačný manuál
+:toc:
+:toclevels: 3
+:toc-title: Kompilačný manuál
+
+== Softvérové požiadavky
+Pre prácu s knižnicou je potrebné mať nainštalovaný nasledovný softvér
+
+* Node.js - v20.9.0
+* npm - 10.1.0
+
+== Kompilácia a publikácia knižnice
+Pred publikáciou novej verzie je potrebné navýšiť verziu knižnice v súbore package.json
+
+[source, json]
+  { "version": "3.1.7" }
+
+Knižnicu publikujeme spustením príkazu
+
+[source, bash]
+  npm run deploy

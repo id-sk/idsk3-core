@@ -1,0 +1,1 @@
+* xref:kompilacny_manual/kompilacny_manual.adoc[Kompilačný manuál]
